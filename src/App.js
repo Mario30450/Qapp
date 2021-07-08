@@ -23,6 +23,11 @@ function App() {
             Enviar mensaje
           </button>
         </form>
+        <ul>
+          {messages.map((m) => (
+            <li key={m.id}>{m.message}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );

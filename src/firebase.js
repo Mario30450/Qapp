@@ -1,7 +1,7 @@
-import * as firebase from "firebase";
-import "@firebase/firestore";
+import firebase from "firebase/app";
+import "firebase/firestore";
 
-const config = {
+const firebaseConfig = {
   apiKey: "AIzaSyCmCvMWa8RmfuuYtL0vxowWAvlxA2BB_LQ",
   authDomain: "chatpp-9aee5.firebaseapp.com",
   projectId: "chatpp-9aee5",
@@ -12,4 +12,6 @@ const config = {
 };
 
 firebase.initializeApp(firebaseConfig);
-export const db = firebase.firestore;
+
+export const firestore = firebase.firestore();
+export const db = firebase.firestore();
